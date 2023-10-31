@@ -16,8 +16,8 @@ test("getSecondsLeftOfYear returns the correct amount of seconds", () => {
   expect(timeString).toBe(3600);
 });
 
-test("getMinutestLeftOfYear is correctly formated", () => {
-  const now = new Date(0, 0, 0, 9, 50, 20);
+test("getMinutestLeftOfYear returns correct amount of minutes", () => {
+  const now = new Date("2022-12-31T23:00:00.000Z");
   const timeString = getMinutesLeftOfYear(now);
-  expect(timeString).toBe("590.33");
+  expect(timeString).toBe("60.00");
 });
