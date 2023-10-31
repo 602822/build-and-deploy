@@ -26,5 +26,6 @@ export const getMinutesLeftOfYear = (now) => {
 
   const minutesLeft = (timeDifference / 60000).toFixed(2);
 
+  console.log(minutesLeft);
   return minutesLeft;
 };
