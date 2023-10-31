@@ -20,7 +20,7 @@ export const getSecondsLeftOfYear = (now) => {
 
 export const getMinutesLeftOfYear = (now) => {
   const currentDate = new Date();
-  const endOfYearDate = getNextYearDate(Date.now);
+  const endOfYearDate = getNextYearDate(now);
 
   const timeDifference = endOfYearDate - currentDate;
 
